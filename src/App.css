@@ -1,0 +1,99 @@
+/* styles.css */
+
+.App {
+  color: var(--bs-white);
+  background:#000000;
+  padding-top: 20px;
+}
+
+.cart {
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  font-weight: 300;
+  background-color:#28a745;
+}
+
+/* Container for all product boxes */
+.product-list {
+  display: flex;
+  flex-wrap: wrap; /* Wraps product items onto new lines */
+  justify-content: center; /* Centers product boxes horizontally */
+  align-items: center; /* Centers product boxes vertically */
+  gap: 20px; /* Adds space between product boxes */
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px; /* Adds padding around the container */
+}
+
+/* Individual product box */
+.product {
+  border: 1px solid #c4bebe;
+  display: flex; /* Enables Flexbox layout */
+  flex-direction: column; /* Stacks items vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(214, 203, 203, 0.1);
+  max-width: 300px; /* Optional: Fixed width for the product box */
+  text-align: center; /* Centers text within the product box */
+  background-color: #f9f9f9; /* Light background color for visibility */
+}
+
+/* Product image styling */
+.product-image {
+  width: 100%; /* Makes image fill the container */
+  height: auto; /* Maintains image aspect ratio */
+  border-radius: 5px; /* Rounds the image corners */
+  margin-bottom: 10px; /* Adds space below the image */
+}
+
+/* Product name styling */
+h3 {
+  margin: 10px 0; /* Adds space around the title */
+  font-size: 1.2em; /* Increases font size */
+  color: #333; /* Darker text color */
+}
+
+/* Product description styling */
+p {
+  margin: 10px 0; /* Adds space around the description */
+  font-size: 0.9em; /* Sets font size */
+  color: #666; /* Lighter text color */
+}
+
+/* Button styling */
+.cart-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px; /* Adds space above the button */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%; /* Makes the button fill the width of the container */
+}
+
+/* Add to Cart button specific styling */
+.add-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.add-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Remove from Cart button specific styling */
+.remove-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
